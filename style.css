@@ -5,6 +5,22 @@
 	box-sizing: border-box;
 }
 
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+}
+
+header {
+	text-align: center;
+}
+.container {
+	height: 80%;
+	width: 100%;
+	padding: 2rem;
+}
+
 .attribution {
 	font-size: 11px;
 	text-align: center;
