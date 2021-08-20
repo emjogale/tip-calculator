@@ -10,20 +10,26 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	height: 100vh;
-	background-color: #9fe8df;
+	background-color: hsl(185, 41%, 84%);
+	font-size: 16px;
+	font-family: "Space Mono", monospace;
+	color: hsl(183, 100%, 15%);
 }
 
 header {
 	text-align: center;
+	padding: 1.5rem 0;
 }
 .container {
-	height: 80%;
+	height: 90%;
 	width: 100%;
-	padding: 2rem;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	background-color: white;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
 }
 
 .input-box {
@@ -31,7 +37,8 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	border: 1px solid black;
+
+	padding: 2rem;
 }
 
 .results-box {
@@ -40,6 +47,40 @@ header {
 	flex-direction: column;
 	justify-content: space-between;
 	border: 1px solid black;
+	margin: 0 0.5rem;
+	padding: 2rem;
+	background-color: hsl(183, 100%, 15%);
+	color: white;
+	border-radius: 15px;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 0.9rem;
+	font-weight: 700;
+}
+
+input {
+	width: 100%;
+	padding: 0.5rem;
+	/* padding-bottom: 0.5rem; */
+	border-radius: 5px;
+	border: none;
+	background-color: hsl(185, 41%, 90%);
+	font-size: 1.5rem;
+	font-weight: 700;
+	font-family: "Space Mono", monospace;
+}
+
+#bill::placeholder {
+	text-align: right;
+}
+
+button {
+	border-radius: 5px;
+	padding: 0.75rem;
+	background-color: hsl(172, 67%, 45%);
 }
 
 .attribution {
@@ -49,3 +90,5 @@ header {
 .attribution a {
 	color: hsl(228, 45%, 44%);
 }
+
+/* color for /person hsl(184, 14%, 56%); */
