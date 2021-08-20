@@ -19,6 +19,21 @@ header {
 	height: 80%;
 	width: 100%;
 	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.input-box {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.results-box {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
 }
 
 .attribution {
