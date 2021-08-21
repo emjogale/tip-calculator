@@ -10,20 +10,29 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	height: 100vh;
-	background-color: hsl(185, 41%, 84%);
+
 	font-size: 16px;
-	font-family: "Space Mono", monospace;
+
 	color: hsl(183, 100%, 15%);
+}
+
+body,
+input,
+button,
+label {
+	font-family: "Space Mono", monospace;
 }
 
 header {
 	text-align: center;
 	padding: 1.5rem 0;
+	background-color: hsl(185, 41%, 84%);
 }
+
+/* container styles */
 .container {
 	height: 90%;
 	width: 100%;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -32,15 +41,47 @@ header {
 	border-top-right-radius: 25px;
 }
 
+/* general component styles */
+label {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 0.9rem;
+	font-weight: 700;
+}
+
+button {
+	border-radius: 5px;
+	padding: 0.5rem;
+	font-size: 1.2rem;
+	border: none;
+}
+
+/* input box styles */
 .input-box {
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-
 	padding: 2rem;
 }
 
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+
+button:first-child {
+	margin-right: 15px;
+}
+
+button.tip {
+	width: 50%;
+	margin-bottom: 10px;
+	background-color: hsl(183, 100%, 15%);
+	color: white;
+}
+
+/* results box styles */
 .results-box {
 	flex-grow: 1;
 	display: flex;
@@ -54,32 +95,21 @@ header {
 	border-radius: 15px;
 }
 
-label {
-	display: block;
-	margin-bottom: 10px;
-	font-size: 0.9rem;
-	font-weight: 700;
-}
-
 input {
 	width: 100%;
 	padding: 0.5rem;
-	/* padding-bottom: 0.5rem; */
 	border-radius: 5px;
 	border: none;
 	background-color: hsl(185, 41%, 90%);
 	font-size: 1.5rem;
 	font-weight: 700;
-	font-family: "Space Mono", monospace;
 }
 
-#bill::placeholder {
+::placeholder {
 	text-align: right;
 }
 
-button {
-	border-radius: 5px;
-	padding: 0.75rem;
+button.reset {
 	background-color: hsl(172, 67%, 45%);
 }
 
