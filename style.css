@@ -25,10 +25,14 @@ label {
 
 header {
 	text-align: center;
-	padding: 1.5rem 0;
+	/* padding: 1.5rem 0; */
 	background-color: hsl(185, 41%, 84%);
 }
 
+header img {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
 /* container styles */
 .container {
 	height: 90%;
