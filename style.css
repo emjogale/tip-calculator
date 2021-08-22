@@ -73,6 +73,9 @@ input {
 	background-color: hsl(185, 41%, 90%);
 	font-size: 1.5rem;
 	font-weight: 700;
+	text-align: right;
+	color: hsl(183, 100%, 15%);
+	outline: none;
 }
 
 ::placeholder {
