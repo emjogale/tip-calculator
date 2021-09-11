@@ -9,11 +9,11 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	height: 100vh;
-
 	font-size: 16px;
-
 	color: hsl(183, 100%, 15%);
+	background-color: hsl(185, 41%, 84%);
 }
 
 body,
@@ -25,8 +25,8 @@ label {
 
 header {
 	text-align: center;
-	/* padding: 1.5rem 0; */
 	background-color: hsl(185, 41%, 84%);
+	padding-top: 3rem;
 }
 
 header img {
@@ -160,6 +160,7 @@ button.tip.custom {
 
 button.reset {
 	background-color: hsl(172, 67%, 45%);
+	color: hsl(183, 100%, 15%);
 }
 
 .attribution {
@@ -170,4 +171,28 @@ button.reset {
 	color: hsl(228, 45%, 44%);
 }
 
-/* color for /person hsl(184, 14%, 56%); */
+@media only screen and (min-width: 1025px) {
+	body {
+		justify-items: flex-start;
+	}
+	.container {
+		flex-direction: row;
+		width: 80%;
+		height: 50%;
+		border-radius: 25px;
+		max-width: 65%;
+	}
+	header {
+		padding-top: 0;
+		padding-bottom: 2rem;
+	}
+
+	.input-box {
+		margin: 1.2rem;
+	}
+
+	.results-box {
+		margin: 1.5rem;
+		padding: 2rem;
+	}
+}
