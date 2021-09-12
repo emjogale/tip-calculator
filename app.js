@@ -10,10 +10,13 @@ const getPercent = (e) => {
 	e.preventDefault();
 	const percent = e.target.value;
 	console.log(percent);
-	console.log(numOfPeopleEl.value);
+	const people = numOfPeopleEl.value;
+	console.log(`Divided by ${people}`);
 	let bill = Number(billEl.value);
-	let total = bill + bill * 0.01 * percent;
-	console.log(total);
+	let tip = Math.round((bill * 0.01 * percent) / people);
+	let total = bill / people + tip;
+	console.log(`the tip per person is ${tip}`);
+	console.log(`The total is ${total}`);
 };
 
 buttons.forEach(function (button) {
