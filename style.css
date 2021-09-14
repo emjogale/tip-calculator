@@ -141,6 +141,7 @@ button.tip.custom {
 
 .results-box input {
 	background-color: hsl(183, 100%, 15%);
+	color: hsl(172, 67%, 45%);
 }
 
 .results-box label {
