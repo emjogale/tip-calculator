@@ -5,7 +5,7 @@ console.log(buttons);
 const numOfPeopleEl = document.querySelector("#num-of-people");
 console.log(numOfPeopleEl);
 
-// define the function to grab the value of the selected tip
+// define the function to grab the value of the selected tip and display it
 const getPercent = (e) => {
 	e.preventDefault();
 	const percent = e.target.value;
@@ -17,6 +17,7 @@ const getPercent = (e) => {
 	let total = bill / people + tip;
 	console.log(`the tip per person is ${tip}`);
 	console.log(`The total is ${total}`);
+	console.log(numOfPeopleEl.value);
 };
 
 buttons.forEach(function (button) {
