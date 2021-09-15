@@ -10,6 +10,7 @@ console.log(totalPerPerson);
 
 // TODO format answers with $ signs and tidy up code!!
 // Put in functionality to complain if number of people === 0
+// also!! check but
 
 // define the function to grab the value of the selected tip and display it
 const getPercent = (e) => {

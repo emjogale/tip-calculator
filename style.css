@@ -59,6 +59,7 @@ button {
 	font-size: 1.2rem;
 	border: none;
 	font-weight: 700;
+	cursor: pointer;
 }
 
 .input-field {
@@ -122,6 +123,11 @@ button.tip {
 
 button.tip.custom {
 	background-color: hsl(185, 41%, 84%);
+	color: hsl(183, 100%, 15%);
+}
+
+button.tip:hover {
+	background-color: hsl(172, 67%, 45%);
 	color: hsl(183, 100%, 15%);
 }
 
