@@ -86,12 +86,9 @@ input#num-of-people {
 	border: 2px solid transparent;
 }
 
-input#bill:focus {
-	border: hsl(172, 67%, 45%) 2px solid;
-}
-
+input#bill:focus,
 input#num-of-people:focus {
-	border: red 2px solid;
+	border: hsl(172, 67%, 45%) 2px solid;
 }
 
 ::placeholder {
