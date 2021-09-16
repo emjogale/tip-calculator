@@ -186,7 +186,7 @@ button.reset {
 	.container {
 		flex-direction: row;
 		width: 80%;
-		height: 50%;
+		max-height: 60%;
 		border-radius: 25px;
 		max-width: 65%;
 	}
