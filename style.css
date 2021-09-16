@@ -79,6 +79,21 @@ input {
 	outline: none;
 }
 
+input#bill,
+input#num-of-people {
+	color: hsl(184, 14%, 56%);
+	cursor: pointer;
+	border: 2px solid transparent;
+}
+
+input#bill:focus {
+	border: hsl(172, 67%, 45%) 2px solid;
+}
+
+input#num-of-people:focus {
+	border: red 2px solid;
+}
+
 ::placeholder {
 	text-align: right;
 }
