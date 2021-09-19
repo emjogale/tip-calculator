@@ -4,10 +4,9 @@ const buttons = document.querySelectorAll("button.tip");
 const numOfPeopleEl = document.querySelector("#num-of-people");
 const tipPerPersonEl = document.querySelector("#tip-per-person");
 const totalPerPersonEl = document.querySelector("#total");
+const reset = document.querySelector(".reset");
 
-// TODO format answers with $ signs and tidy up code!!
 // Put in functionality to complain if number of people === 0
-// also!! check but
 
 // define the function to grab the value of the selected tip and display it
 const getPercent = (e) => {
@@ -21,11 +20,15 @@ const getPercent = (e) => {
 	// console.log(`the total per person is ${total}`);
 	console.log(`the tip per person is ${tip}`);
 	console.log(`The total is ${total}`);
-	tipPerPersonEl.textContent = `$${tip}`;
+	tipPerPersonEl.value = tip;
 	console.log(tipPerPersonEl.value);
 	totalPerPersonEl.value = total;
 };
 
+const resetAll = () => {};
+
 buttons.forEach(function (button) {
 	button.addEventListener("click", getPercent);
 });
+
+reset.addEventListener("click", resetAll);
