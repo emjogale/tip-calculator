@@ -180,14 +180,11 @@ span.amount {
 	color: hsl(184, 14%, 56%);
 }
 
-#tip-per-person {
+#tip-per-person,
+#total-per-person {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-}
-span.amount {
-	display: inline;
-	text-align: right;
 }
 
 button.reset {
