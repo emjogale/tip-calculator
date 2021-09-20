@@ -4,7 +4,10 @@ const buttons = document.querySelectorAll("button.tip");
 const numOfPeopleEl = document.querySelector("#num-of-people");
 const tipPerPersonEl = document.querySelector("#tip-per-person span.amount");
 console.log(tipPerPersonEl);
-const totalPerPersonEl = document.querySelector("#total");
+const totalPerPersonEl = document.querySelector(
+	"#total-per-person span.amount"
+);
+
 const reset = document.querySelector(".reset");
 
 // define the function to grab the value of the selected tip and display it
@@ -23,7 +26,8 @@ const getPercent = (e) => {
 		// console.log(`the total per person is ${total}`);
 		console.log(`the tip per person is ${tip}`);
 		console.log(`The total is ${total}`);
-		// totalPerPersonEl.textContent = tip; work out how to do this!!
+		tipPerPersonEl.textContent = "$" + tip;
+		totalPerPersonEl.textContent = "$" + total;
 	}
 };
 
