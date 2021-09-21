@@ -9,6 +9,7 @@ const totalPerPersonEl = document.querySelector(
 );
 
 const reset = document.querySelector(".reset");
+console.log(reset);
 
 // define the function to grab the value of the selected tip and display it
 const getPercent = (e) => {
@@ -33,6 +34,10 @@ const getPercent = (e) => {
 
 const resetAll = () => {
 	console.log("ok so now we need to reset everything");
+	billEl.value = 0;
+	numOfPeopleEl.value = 0;
+	tipPerPersonEl.textContent = "$0.00";
+	totalPerPersonEl.textContent = "$0.00";
 };
 
 buttons.forEach(function (button) {
