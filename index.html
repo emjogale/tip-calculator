@@ -63,7 +63,8 @@
 					</div>
 				</div>
 				<div class="input-field people">
-					<label for="num-of-people">Number of People</label>
+					<label for="num-of-people"
+						>Number of People<span class="error-message">Can't be zero</label>
 					<input
 						type="number"
 						id="num-of-people"
@@ -72,7 +73,7 @@
 						aria-label="enter-number-of-people"
 						min="0"
 					/>
-					<small></small>
+					<!-- <small class="error-message">Can't be zero</small> -->
 				</div>
 			</form>
 			<section class="results-box">

@@ -91,6 +91,20 @@ input#num-of-people:focus {
 	border: hsl(172, 67%, 45%) 2px solid;
 }
 
+.error {
+	border: 2px solid red;
+}
+
+.error-message {
+	display: none;
+	text-align: end;
+	color: red;
+}
+
+.show {
+	display: inline;
+}
+
 ::placeholder {
 	text-align: right;
 }
@@ -170,7 +184,7 @@ button.tip:hover {
 
 span.amount {
 	color: hsl(172, 67%, 45%);
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-weight: 700;
 }
 

@@ -2,12 +2,13 @@
 const billEl = document.querySelector("#bill");
 const buttons = document.querySelectorAll("button.tip");
 const numOfPeopleEl = document.querySelector("#num-of-people");
+console.log(numOfPeopleEl);
 const tipPerPersonEl = document.querySelector("#tip-per-person span.amount");
-console.log(tipPerPersonEl);
 const totalPerPersonEl = document.querySelector(
 	"#total-per-person span.amount"
 );
-
+const errorMessage = document.querySelector(".error-message");
+console.log(errorMessage);
 const reset = document.querySelector(".reset");
 console.log(reset);
 
@@ -16,9 +17,12 @@ const getPercent = (e) => {
 	e.preventDefault();
 	const percent = e.target.value;
 	const people = numOfPeopleEl.value;
+
 	if (!people) {
-		// Put in functionality to complain if number of people === 0
-		console.log("you have to put people in !!");
+		console.log("no people!!!!");
+		// add style to show error - border not
+		numOfPeopleEl.classList.add("error");
+		errorMessage.classList.add("show");
 	} else {
 		console.log(`Divided by ${people}`);
 		let bill = Number(billEl.value);
@@ -33,11 +37,11 @@ const getPercent = (e) => {
 };
 
 const resetAll = () => {
-	console.log("ok so now we need to reset everything");
 	billEl.value = 0;
 	numOfPeopleEl.value = 0;
 	tipPerPersonEl.textContent = "$0.00";
 	totalPerPersonEl.textContent = "$0.00";
+	errorMessage.classList.remove("show");
 };
 
 buttons.forEach(function (button) {
