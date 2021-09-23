@@ -8,7 +8,7 @@ const totalPerPersonEl = document.querySelector(
 	"#total-per-person span.amount"
 );
 const errorMessage = document.querySelector(".error-message");
-console.log(errorMessage);
+const peopleInput = document.querySelector(".people-input");
 const reset = document.querySelector(".reset");
 console.log(reset);
 
@@ -17,12 +17,18 @@ const getPercent = (e) => {
 	e.preventDefault();
 	const percent = e.target.value;
 	const people = numOfPeopleEl.value;
-
+	if (errorMessage.classList.contains("show")) {
+		errorMessage.classList.remove("show");
+	}
+	if (peopleInput.classList.contains("red-outline")) {
+		peopleInput.classList.remove("red-outline");
+	}
 	if (!people) {
 		console.log("no people!!!!");
 		// add style to show error - border not
 		numOfPeopleEl.classList.add("error");
 		errorMessage.classList.add("show");
+		peopleInput.classList.add("red-outline");
 	} else {
 		console.log(`Divided by ${people}`);
 		let bill = Number(billEl.value);
@@ -42,6 +48,7 @@ const resetAll = () => {
 	tipPerPersonEl.textContent = "$0.00";
 	totalPerPersonEl.textContent = "$0.00";
 	errorMessage.classList.remove("show");
+	peopleInput.classList.remove("red-outline");
 };
 
 buttons.forEach(function (button) {

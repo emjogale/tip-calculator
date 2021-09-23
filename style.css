@@ -92,11 +92,13 @@ input#num-of-people:focus {
 	border: hsl(172, 67%, 45%) 2px solid;
 }
 
-.error {
+.red-outline {
 	border: 2px solid red;
+	border-radius: 5px;
 }
 
 .error-message {
+	display: none;
 	position: absolute;
 	right: 0;
 	color: red;
