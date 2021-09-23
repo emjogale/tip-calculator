@@ -51,6 +51,7 @@ label {
 	margin-bottom: 10px;
 	font-size: 0.9rem;
 	font-weight: 700;
+	position: relative;
 }
 
 button {
@@ -96,8 +97,8 @@ input#num-of-people:focus {
 }
 
 .error-message {
-	display: none;
-	text-align: end;
+	position: absolute;
+	right: 0;
 	color: red;
 }
 
