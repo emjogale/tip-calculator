@@ -1,4 +1,4 @@
-// grab all the elements that we'll need to work with
+// DOM elements
 const billEl = document.querySelector("#bill");
 const buttons = document.querySelectorAll("button.tip");
 const numOfPeopleEl = document.querySelector("#num-of-people");
@@ -11,9 +11,15 @@ const errorMessage = document.querySelector(".error-message");
 const peopleInput = document.querySelector(".people-input");
 const reset = document.querySelector(".reset");
 console.log(reset);
+const custom = document.querySelector(".custom");
+console.log(custom.value);
 
-// define the function to grab the value of the selected tip and display it
-const getPercent = (e) => {
+// helper function to use with custom button
+const customCalculate = () => {
+	console.log("now we need to use the custom function");
+};
+// the calculate tip function
+const calculateTip = (e) => {
 	e.preventDefault();
 	const percent = e.target.value;
 	const people = numOfPeopleEl.value;
@@ -30,18 +36,23 @@ const getPercent = (e) => {
 		errorMessage.classList.add("show");
 		peopleInput.classList.add("red-outline");
 	} else {
-		console.log(`Divided by ${people}`);
-		let bill = Number(billEl.value);
-		let tip = ((bill * 0.01 * percent) / people).toFixed(2);
-		let total = (Number(bill / people) + Number(tip)).toFixed(2);
-		// console.log(`the total per person is ${total}`);
-		console.log(`the tip per person is ${tip}`);
-		console.log(`The total is ${total}`);
-		tipPerPersonEl.textContent = "$" + tip;
-		totalPerPersonEl.textContent = "$" + total;
+		if (e.target.value === "custom") {
+			customCalculate();
+		} else {
+			console.log(`Divided by ${people}`);
+			let bill = Number(billEl.value);
+			let tip = ((bill * 0.01 * percent) / people).toFixed(2);
+			let total = (Number(bill / people) + Number(tip)).toFixed(2);
+			// console.log(`the total per person is ${total}`);
+			console.log(`the tip per person is ${tip}`);
+			console.log(`The total is ${total}`);
+			tipPerPersonEl.textContent = "$" + tip;
+			totalPerPersonEl.textContent = "$" + total;
+		}
 	}
 };
 
+// the reset function
 const resetAll = () => {
 	billEl.value = 0;
 	numOfPeopleEl.value = 0;
@@ -51,8 +62,9 @@ const resetAll = () => {
 	peopleInput.classList.remove("red-outline");
 };
 
+// event listeners
 buttons.forEach(function (button) {
-	button.addEventListener("click", getPercent);
+	button.addEventListener("click", calculateTip);
 });
 
 reset.addEventListener("click", resetAll);
