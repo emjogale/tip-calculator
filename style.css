@@ -154,7 +154,7 @@ input#custom {
 	background-color: hsl(185, 41%, 84%);
 	color: hsl(183, 100%, 15%);
 	width: 50%;
-	padding: 0;
+	padding: 0 0.5rem;
 	margin-bottom: 10px;
 }
 
