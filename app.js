@@ -1,6 +1,6 @@
 // DOM elements
 const billEl = document.querySelector("#bill");
-const buttons = document.querySelectorAll("button.tip");
+const buttons = document.querySelectorAll(".tip");
 const numOfPeopleEl = document.querySelector("#num-of-people");
 console.log(numOfPeopleEl);
 const tipPerPersonEl = document.querySelector("#tip-per-person span.amount");
@@ -12,7 +12,6 @@ const peopleInput = document.querySelector(".people-input");
 const reset = document.querySelector(".reset");
 console.log(reset);
 const custom = document.querySelector(".custom");
-console.log(custom.value);
 
 // helper function to use with custom button
 const customCalculate = () => {
@@ -20,6 +19,7 @@ const customCalculate = () => {
 };
 // the calculate tip function
 const calculateTip = (e) => {
+	console.log(e);
 	e.preventDefault();
 	const percent = e.target.value;
 	const people = numOfPeopleEl.value;
