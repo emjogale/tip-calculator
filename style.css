@@ -126,10 +126,6 @@ input#num-of-people:focus {
 	justify-content: space-between;
 }
 
-button:first-child {
-	margin-right: 15px;
-}
-
 .input-field.bill::after,
 .input-field.people::after {
 	content: url(./images/icon-dollar.svg);
@@ -147,10 +143,10 @@ button:first-child {
 .tip-choices {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	gap: 0.5rem;
 }
 
 button.tip {
-	margin-bottom: 10px;
 	background-color: hsl(183, 100%, 15%);
 	color: white;
 }
@@ -158,9 +154,7 @@ button.tip {
 input#custom {
 	background-color: hsl(185, 41%, 84%);
 	color: hsl(183, 100%, 15%);
-	width: 50%;
 	padding: 0 0.5rem;
-	margin-bottom: 10px;
 }
 
 input#custom::placeholder {
