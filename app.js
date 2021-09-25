@@ -11,7 +11,7 @@ const errorMessage = document.querySelector(".error-message");
 const peopleInput = document.querySelector(".people-input");
 const reset = document.querySelector(".reset");
 console.log(reset);
-const custom = document.querySelector(".custom");
+const custom = document.querySelector("#custom");
 
 // helper function to use with custom button
 const customCalculate = () => {
@@ -54,12 +54,16 @@ const calculateTip = (e) => {
 
 // the reset function
 const resetAll = () => {
+	custom.value = "";
+	custom.setAttribute("placeholder", "Custom");
 	billEl.value = 0;
 	numOfPeopleEl.value = 0;
 	tipPerPersonEl.textContent = "$0.00";
 	totalPerPersonEl.textContent = "$0.00";
 	errorMessage.classList.remove("show");
 	peopleInput.classList.remove("red-outline");
+
+	// need to add reset for custom button
 };
 
 // event listeners
