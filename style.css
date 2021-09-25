@@ -48,7 +48,7 @@ header img {
 /* general component styles */
 label {
 	display: block;
-	margin-bottom: 10px;
+	margin: 1rem 0;
 	font-size: 0.9rem;
 	font-weight: 700;
 	position: relative;
@@ -143,8 +143,13 @@ button:first-child {
 	content: url(./images/icon-person.svg);
 }
 
+/* tip-area */
+.tip-choices {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
 button.tip {
-	width: 50%;
 	margin-bottom: 10px;
 	background-color: hsl(183, 100%, 15%);
 	color: white;
