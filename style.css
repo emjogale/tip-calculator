@@ -23,19 +23,9 @@ label {
 	font-family: "Space Mono", monospace;
 }
 
-header {
-	text-align: center;
-	background-color: hsl(185, 41%, 84%);
-	padding-top: 3rem;
-}
-
-header img {
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
-}
 /* container styles */
 .container {
-	height: 90%;
+	/* height: 90%; */
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -48,16 +38,16 @@ header img {
 /* general component styles */
 label {
 	display: block;
-	margin: 1rem 0;
-	font-size: 0.9rem;
+	margin: 1.5rem 0 1rem 0;
+	font-size: 0.8rem;
 	font-weight: 700;
 	position: relative;
 }
 
 button {
 	border-radius: 5px;
-	padding: 0.5rem;
-	font-size: 1.2rem;
+	padding: 0.3rem;
+	font-size: 1.1rem;
 	border: none;
 	font-weight: 700;
 	cursor: pointer;
@@ -73,11 +63,37 @@ input {
 	border-radius: 5px;
 	border: none;
 	background-color: hsl(185, 41%, 90%);
-	font-size: 1.5rem;
+	font-size: 1.05rem;
 	font-weight: 700;
 	text-align: right;
 	color: hsl(183, 100%, 15%);
 	outline: none;
+}
+
+/* header area styles */
+
+header {
+	text-align: center;
+	background-color: hsl(185, 41%, 84%);
+	padding-top: 3rem;
+}
+
+header img {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+/* left side styles */
+.input-box {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 1.5rem;
+}
+
+.bill label {
+	margin-top: 0;
 }
 
 input#bill,
@@ -105,25 +121,11 @@ input#num-of-people:focus {
 }
 
 .show {
-	display: inline;
+	display: block;
 }
 
 ::placeholder {
 	text-align: right;
-}
-
-/* input box styles */
-.input-box {
-	flex-grow: 1;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	padding: 1.5rem;
-}
-
-.row {
-	display: flex;
-	justify-content: space-between;
 }
 
 .input-field.bill::after,
@@ -143,12 +145,17 @@ input#num-of-people:focus {
 .tip-choices {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 0.5rem;
+	gap: 0.7rem;
 }
 
 button.tip {
 	background-color: hsl(183, 100%, 15%);
 	color: white;
+}
+
+button.tip:hover {
+	background-color: hsl(172, 67%, 45%);
+	color: hsl(183, 100%, 15%);
 }
 
 input#custom {
@@ -162,12 +169,7 @@ input#custom::placeholder {
 	font-size: 1.2rem;
 }
 
-button.tip:hover {
-	background-color: hsl(172, 67%, 45%);
-	color: hsl(183, 100%, 15%);
-}
-
-/* results box styles */
+/* right side styles */
 .results-box {
 	flex-grow: 1;
 	display: flex;
@@ -175,26 +177,18 @@ button.tip:hover {
 	justify-content: space-between;
 	border: 1px solid black;
 	margin: 0 0.8rem;
-	padding: 1rem;
+	padding: 2rem 1rem 1rem 1rem;
 	background-color: hsl(183, 100%, 15%);
 	color: white;
 	border-radius: 15px;
 }
 
-.results-box input {
-	background-color: hsl(183, 100%, 15%);
-	color: hsl(172, 67%, 45%);
+p.amount {
+	font-size: 0.8rem;
 }
-
-.results-box label {
-	position: absolute;
-	top: 1rem;
-	margin-top: 10px;
-}
-
 span.amount {
 	color: hsl(172, 67%, 45%);
-	font-size: 2rem;
+	font-size: 1.6rem;
 	font-weight: 700;
 }
 
@@ -202,6 +196,7 @@ span.amount {
 	font-size: 0.7rem;
 	display: block;
 	color: hsl(184, 14%, 56%);
+	margin-top: 0.2rem;
 }
 
 #tip-per-person,
@@ -209,6 +204,7 @@ span.amount {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 1.5rem;
 }
 
 button.reset {
@@ -250,5 +246,8 @@ button.reset {
 	}
 	.results-box input {
 		font-size: 2.3rem;
+	}
+	.show {
+		display: inline;
 	}
 }
