@@ -6,10 +6,6 @@
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	height: 100vh;
 	font-size: 16px;
 	color: hsl(183, 100%, 15%);
@@ -33,6 +29,7 @@ label {
 	background-color: white;
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
+	margin: 0 auto;
 }
 
 /* general component styles */
@@ -75,11 +72,11 @@ input {
 header {
 	text-align: center;
 	background-color: hsl(185, 41%, 84%);
-	padding-top: 3rem;
+	padding-top: 2rem;
 }
 
 header img {
-	padding-top: 1.5rem;
+	padding-top: 1rem;
 	padding-bottom: 1.5rem;
 }
 
@@ -161,12 +158,11 @@ button.tip:hover {
 input#custom {
 	background-color: hsl(185, 41%, 84%);
 	color: hsl(183, 100%, 15%);
-	padding: 0 0.5rem;
 }
 
 input#custom::placeholder {
 	text-align: center;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 }
 
 /* right side styles */
@@ -222,32 +218,53 @@ button.reset {
 
 @media only screen and (min-width: 1025px) {
 	body {
-		justify-items: flex-start;
+		justify-content: flex-start;
 	}
 	.container {
 		flex-direction: row;
-		width: 80%;
-		max-height: 60%;
+		max-width: 60%;
+		max-height: 70%;
 		border-radius: 25px;
-		max-width: 65%;
 	}
 	header {
-		padding-top: 0;
+		padding-top: 7rem;
 		padding-bottom: 2rem;
 	}
 
+	label {
+		font-size: 0.9rem;
+	}
+
+	input {
+		font-size: 1.3rem;
+	}
+
+	button {
+		font-size: 1.2rem;
+	}
+
 	.input-box {
-		margin: 1.2rem;
+		padding: 2rem;
+		max-width: 50%;
+	}
+
+	.tip-choices {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.show {
+		display: inline;
 	}
 
 	.results-box {
 		margin: 1.5rem;
-		padding: 2rem;
+		padding: 2.5rem 2.2rem 2.2rem 2.2rem;
 	}
 	.results-box input {
 		font-size: 2.3rem;
 	}
-	.show {
-		display: inline;
+
+	span.amount {
+		font-size: 2rem;
 	}
 }
