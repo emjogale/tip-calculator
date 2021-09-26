@@ -29,7 +29,7 @@ const calculateTip = (e) => {
 	if (peopleInput.classList.contains("red-outline")) {
 		peopleInput.classList.remove("red-outline");
 	}
-	if (people === 0) {
+	if (people == 0) {
 		console.log("no people!!!!");
 		// add style to show error - border not
 		numOfPeopleEl.classList.add("error");
