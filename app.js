@@ -29,7 +29,7 @@ const calculateTip = (e) => {
 	if (peopleInput.classList.contains("red-outline")) {
 		peopleInput.classList.remove("red-outline");
 	}
-	if (!people) {
+	if (people === 0) {
 		console.log("no people!!!!");
 		// add style to show error - border not
 		numOfPeopleEl.classList.add("error");
@@ -43,7 +43,6 @@ const calculateTip = (e) => {
 			let bill = Number(billEl.value);
 			let tip = ((bill * 0.01 * percent) / people).toFixed(2);
 			let total = (Number(bill / people) + Number(tip)).toFixed(2);
-			// console.log(`the total per person is ${total}`);
 			console.log(`the tip per person is ${tip}`);
 			console.log(`The total is ${total}`);
 			tipPerPersonEl.textContent = "$" + tip;
