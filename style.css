@@ -50,6 +50,7 @@ label {
 	font-size: 0.8rem;
 	font-weight: 700;
 	position: relative;
+	color: var(--dark-grayish-cyan-1);
 }
 
 button {
@@ -128,6 +129,7 @@ header img {
 
 ::placeholder {
 	text-align: right;
+	color: var(--light-grayish-cyan-1);
 }
 
 .input-field.bill::after,
@@ -162,12 +164,13 @@ button.tip:hover {
 
 input#custom {
 	background-color: var(--light-grayish-cyan-1);
-	color: var(--very-dark-cyan);
+	padding: 0;
 }
 
 input#custom::placeholder {
 	text-align: center;
 	font-size: 1.1rem;
+	color: var(--dark-grayish-cyan-1);
 }
 
 /* right side styles */
