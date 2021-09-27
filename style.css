@@ -110,11 +110,6 @@ header img {
 	margin-top: 0;
 }
 
-/* input#bill:focus,
-input#num-of-people:focus {
-	border: var(--strong-cyan) 2px solid;
-} */
-
 .red-outline {
 	border: 2px solid red;
 	border-radius: 5px;
