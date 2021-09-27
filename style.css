@@ -1,3 +1,14 @@
+/* global variables */
+:root {
+	--strong-cyan: hsl(172, 67%, 45%);
+	--very-dark-cyan: hsl(183, 100%, 15%);
+	--dark-grayish-cyan-1: hsl(186, 14%, 43%);
+	--dark-grayish-cyan-2: hsl(184, 14%, 56%);
+	--light-grayish-cyan-1: hsl(185, 41%, 84%);
+	--light-grayish-cyan-2: hsl(189, 41%, 97%);
+	--white: hsl(0, 0%, 100%);
+}
+
 /*global styles */
 * {
 	margin: 0;
@@ -8,8 +19,8 @@
 body {
 	height: 100vh;
 	font-size: 16px;
-	color: hsl(183, 100%, 15%);
-	background-color: hsl(185, 41%, 84%);
+	color: var(--very-dark-cyan);
+	background-color: var(--light-grayish-cyan-1);
 }
 
 body,
@@ -59,19 +70,25 @@ input {
 	padding: 0.5rem;
 	border-radius: 5px;
 	border: none;
-	background-color: hsl(185, 41%, 90%);
+	background-color: var(--light-grayish-cyan-2);
 	font-size: 1.05rem;
 	font-weight: 700;
 	text-align: right;
-	color: hsl(183, 100%, 15%);
+	color: var(--very-dark-cyan);
 	outline: none;
+	cursor: pointer;
+	border: 2px solid transparent;
+}
+
+input:focus {
+	border: var(--strong-cyan) 2px solid;
 }
 
 /* header area styles */
 
 header {
 	text-align: center;
-	background-color: hsl(185, 41%, 84%);
+	background-color: var(--light-grayish-cyan-1);
 	padding-top: 2rem;
 }
 
@@ -93,17 +110,10 @@ header img {
 	margin-top: 0;
 }
 
-input#bill,
-input#num-of-people {
-	color: hsl(184, 14%, 56%);
-	cursor: pointer;
-	border: 2px solid transparent;
-}
-
-input#bill:focus,
+/* input#bill:focus,
 input#num-of-people:focus {
-	border: hsl(172, 67%, 45%) 2px solid;
-}
+	border: var(--strong-cyan) 2px solid;
+} */
 
 .red-outline {
 	border: 2px solid red;
@@ -146,18 +156,18 @@ input#num-of-people:focus {
 }
 
 button.tip {
-	background-color: hsl(183, 100%, 15%);
+	background-color: var(--very-dark-cyan);
 	color: white;
 }
 
 button.tip:hover {
-	background-color: hsl(172, 67%, 45%);
-	color: hsl(183, 100%, 15%);
+	background-color: var(--strong-cyan);
+	color: var(--very-dark-cyan);
 }
 
 input#custom {
-	background-color: hsl(185, 41%, 84%);
-	color: hsl(183, 100%, 15%);
+	background-color: var(--light-grayish-cyan-1);
+	color: var(--very-dark-cyan);
 }
 
 input#custom::placeholder {
@@ -174,7 +184,7 @@ input#custom::placeholder {
 	border: 1px solid black;
 	margin: 0 0.8rem;
 	padding: 2rem 1rem 1rem 1rem;
-	background-color: hsl(183, 100%, 15%);
+	background-color: var(--very-dark-cyan);
 	color: white;
 	border-radius: 15px;
 }
@@ -183,7 +193,7 @@ p.amount {
 	font-size: 0.8rem;
 }
 span.amount {
-	color: hsl(172, 67%, 45%);
+	color: var(--strong-cyan);
 	font-size: 1.6rem;
 	font-weight: 700;
 }
@@ -191,7 +201,7 @@ span.amount {
 .results-box span.small {
 	font-size: 0.7rem;
 	display: block;
-	color: hsl(184, 14%, 56%);
+	color: var(--dark-grayish-cyan-2);
 	margin-top: 0.2rem;
 }
 
@@ -204,8 +214,8 @@ span.amount {
 }
 
 button.reset {
-	background-color: hsl(172, 67%, 45%);
-	color: hsl(183, 100%, 15%);
+	background-color: var(--strong-cyan);
+	color: var(--very-dark-cyan);
 }
 
 .attribution {
