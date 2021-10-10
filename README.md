@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [github.com/emjogale/tip-calculator](https://github.com/emjogale/tip-calculator)
+- Live Site URL: [tip-calculator-emjogale.vercel.app](https://tip-calculator-emjogale.vercel.app/)
 
 ## My process
 
@@ -50,6 +50,7 @@ I also learnt the difference betweeen 0 == '0' and 0 === '0', as in the first on
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+<!-- - Website - [Add your name here](https://www.your-site.com) -->
+
 - Frontend Mentor - [@emjogale](https://www.frontendmentor.io/profile/emjogale)
 - Twitter - [@emmagale2635](https://www.twitter.com/emmagale2635)
