@@ -163,7 +163,7 @@ button.tip:hover {
 }
 
 input#custom {
-	background-color: var(--light-grayish-cyan-1);
+	background-color: var(--light-grayish-cyan-2);
 	padding: 0;
 }
 
@@ -230,12 +230,12 @@ button.reset {
 	}
 	.container {
 		flex-direction: row;
-		max-width: 55%;
-		max-height: 70%;
+		max-width: 70%;
+		max-height: 80%;
 		border-radius: 25px;
 	}
 	header {
-		padding-top: 7rem;
+		padding-top: 9rem;
 		padding-bottom: 2rem;
 	}
 
