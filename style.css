@@ -155,6 +155,7 @@ header img {
 button.tip {
 	background-color: var(--very-dark-cyan);
 	color: white;
+	padding: 0.5rem 0;
 }
 
 button.tip:hover {
@@ -266,14 +267,18 @@ button.reset {
 
 	.results-box {
 		margin: 1.5rem;
-		padding: 2.5rem 2.2rem 2.2rem 2.2rem;
+		padding: 2.8rem 2.4rem 2.2rem 2.2rem;
 	}
 
 	p.amount {
-		font-size: 0.9rem;
+		font-size: 1rem;
 	}
 
 	span.amount {
 		font-size: 3rem;
+	}
+
+	span.small {
+		font-size: 0.8rem;
 	}
 }
