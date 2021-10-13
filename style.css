@@ -236,11 +236,11 @@ button.reset {
 	}
 	header {
 		padding-top: 9rem;
-		padding-bottom: 2rem;
+		padding-bottom: 3rem;
 	}
 
 	label {
-		font-size: 0.9rem;
+		font-size: 1rem;
 	}
 
 	input {
@@ -267,6 +267,10 @@ button.reset {
 	.results-box {
 		margin: 1.5rem;
 		padding: 2.5rem 2.2rem 2.2rem 2.2rem;
+	}
+
+	p.amount {
+		font-size: 0.9rem;
 	}
 
 	span.amount {
