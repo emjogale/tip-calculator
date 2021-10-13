@@ -231,7 +231,7 @@ button.reset {
 	.container {
 		flex-direction: row;
 		max-width: 65%;
-		height: 50%;
+		height: 48%;
 		border-radius: 25px;
 	}
 	header {
@@ -274,6 +274,6 @@ button.reset {
 	}
 
 	span.amount {
-		font-size: 2.5rem;
+		font-size: 2.6rem;
 	}
 }
