@@ -136,7 +136,7 @@ header img {
 .input-field.people::after {
 	content: url(./images/icon-dollar.svg);
 	position: absolute;
-	bottom: 1.2rem;
+	bottom: 0.8rem;
 	left: 0.75rem;
 	height: auto;
 }
@@ -246,6 +246,7 @@ button.reset {
 
 	input {
 		font-size: 1.3rem;
+		padding: 0.2rem;
 	}
 
 	button {
@@ -253,7 +254,7 @@ button.reset {
 	}
 
 	.input-box {
-		padding: 2rem;
+		padding: 2.2rem 2rem 2.2rem 2.2rem;
 		max-width: 50%;
 	}
 
