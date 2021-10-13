@@ -230,7 +230,7 @@ button.reset {
 	}
 	.container {
 		flex-direction: row;
-		max-width: 70%;
+		max-width: 65%;
 		max-height: 80%;
 		border-radius: 25px;
 	}
