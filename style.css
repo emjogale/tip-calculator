@@ -231,7 +231,7 @@ button.reset {
 	.container {
 		flex-direction: row;
 		max-width: 65%;
-		max-height: 80%;
+		height: 50%;
 		border-radius: 25px;
 	}
 	header {
@@ -268,11 +268,8 @@ button.reset {
 		margin: 1.5rem;
 		padding: 2.5rem 2.2rem 2.2rem 2.2rem;
 	}
-	.results-box input {
-		font-size: 2.3rem;
-	}
 
 	span.amount {
-		font-size: 2.1rem;
+		font-size: 2.5rem;
 	}
 }
