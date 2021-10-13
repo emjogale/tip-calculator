@@ -81,6 +81,11 @@ input {
 	border: 2px solid transparent;
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+
 input:focus {
 	border: var(--strong-cyan) 2px solid;
 }
@@ -246,7 +251,7 @@ button.reset {
 
 	input {
 		font-size: 1.3rem;
-		padding: 0.2rem;
+		padding: 0.2rem 1rem 0.2rem 0.2rem;
 	}
 
 	button {
@@ -268,7 +273,7 @@ button.reset {
 
 	.results-box {
 		margin: 1.5rem;
-		padding: 2.8rem 2.4rem 2.2rem 2.2rem;
+		padding: 2.4rem 2.4rem 2.2rem 2.2rem;
 		justify-content: space-around;
 	}
 
