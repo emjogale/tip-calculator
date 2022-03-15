@@ -2,7 +2,6 @@
 const billEl = document.querySelector("#bill");
 const buttons = document.querySelectorAll(".tip");
 const numOfPeopleEl = document.querySelector("#num-of-people");
-console.log(numOfPeopleEl);
 const tipPerPersonEl = document.querySelector("#tip-per-person span.amount");
 const totalPerPersonEl = document.querySelector(
 	"#total-per-person span.amount"
@@ -10,16 +9,9 @@ const totalPerPersonEl = document.querySelector(
 const errorMessage = document.querySelector(".error-message");
 const peopleInput = document.querySelector(".people-input");
 const reset = document.querySelector(".reset");
-console.log(reset);
 const custom = document.querySelector("#custom");
 
-// helper function to use with custom button
-const customCalculate = () => {
-	console.log("now we need to use the custom function");
-};
-// the calculate tip function
 const calculateTip = (e) => {
-	console.log(e);
 	e.preventDefault();
 	const percent = e.target.value;
 	const people = numOfPeopleEl.value;
@@ -30,24 +22,16 @@ const calculateTip = (e) => {
 		peopleInput.classList.remove("red-outline");
 	}
 	if (people == 0) {
-		console.log("no people!!!!");
-		// add style to show error - border not
+		// add style to show error
 		numOfPeopleEl.classList.add("error");
 		errorMessage.classList.add("show");
 		peopleInput.classList.add("red-outline");
 	} else {
-		if (e.target.value === "custom") {
-			customCalculate();
-		} else {
-			console.log(`Divided by ${people}`);
-			let bill = Number(billEl.value);
-			let tip = ((bill * 0.01 * percent) / people).toFixed(2);
-			let total = (Number(bill / people) + Number(tip)).toFixed(2);
-			console.log(`the tip per person is ${tip}`);
-			console.log(`The total is ${total}`);
-			tipPerPersonEl.textContent = "$" + tip;
-			totalPerPersonEl.textContent = "$" + total;
-		}
+		let bill = Number(billEl.value);
+		let tip = ((bill * 0.01 * percent) / people).toFixed(2);
+		let total = (Number(bill / people) + Number(tip)).toFixed(2);
+		tipPerPersonEl.textContent = "$" + tip;
+		totalPerPersonEl.textContent = "$" + total;
 	}
 };
 
@@ -61,8 +45,6 @@ const resetAll = () => {
 	totalPerPersonEl.textContent = "$0.00";
 	errorMessage.classList.remove("show");
 	peopleInput.classList.remove("red-outline");
-
-	// need to add reset for custom button
 };
 
 // event listeners
