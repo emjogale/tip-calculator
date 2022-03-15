@@ -186,6 +186,7 @@ button.tip:hover {
 input#custom {
 	background-color: var(--light-grayish-cyan-2);
 	padding: 0;
+	text-align: center;
 }
 
 input#custom::placeholder {
