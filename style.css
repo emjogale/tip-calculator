@@ -191,7 +191,7 @@ input#custom {
 
 input#custom::placeholder {
 	text-align: center;
-	font-size: 1.1rem;
+	font-size: 1.4rem;
 	color: var(--very-dark-cyan);
 }
 
